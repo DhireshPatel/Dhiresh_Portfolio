@@ -1,0 +1,41 @@
+.wrap {
+  position: relative;
+  text-align: center;
+  padding: 90px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--card);
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 640px;
+  height: 320px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, var(--accent) 0%, transparent 70%);
+  opacity: 0.16;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.heading {
+  position: relative;
+  font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.actions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+}

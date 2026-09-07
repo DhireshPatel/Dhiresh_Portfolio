@@ -1,0 +1,71 @@
+.hero {
+  position: relative;
+  padding: 90px 0 60px;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 560px;
+  height: 320px;
+  background: radial-gradient(ellipse, var(--accent) 0%, transparent 70%);
+  opacity: 0.2;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+}
+
+.heading {
+  font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-top: 12px;
+}
+
+.subheading {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin-top: 18px;
+  line-height: 1.7;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 50px;
+  margin-top: 90px;
+  padding-top: 60px;
+  border-top: 1px solid var(--border);
+}
+
+.storyTitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  position: sticky;
+  top: 110px;
+}
+
+.storyCopy p {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  max-width: 640px;
+}
+
+@media (max-width: 860px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .storyTitle {
+    position: static;
+  }
+}

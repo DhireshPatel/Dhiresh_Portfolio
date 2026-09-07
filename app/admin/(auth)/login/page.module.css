@@ -1,0 +1,101 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  padding: 24px;
+}
+
+.spinner {
+  animation: spin 0.8s linear infinite;
+  color: var(--muted);
+}
+
+.btnSpinner {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 34px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.logoDot {
+  color: var(--accent);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 22px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.field label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.field input {
+  background: var(--background-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: var(--foreground);
+  font-size: 0.94rem;
+  transition: border-color 0.25s var(--ease);
+}
+
+.field input:focus {
+  border-color: var(--accent);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--danger-soft);
+  border: 1px solid rgba(239, 91, 91, 0.35);
+  color: #ff9c9c;
+  font-size: 0.85rem;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
+}
+
+.submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+}

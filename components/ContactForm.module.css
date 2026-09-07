@@ -1,0 +1,120 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  left: -9999px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.input {
+  background: var(--background-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 13px 15px;
+  color: var(--foreground);
+  font-size: 0.94rem;
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+  resize: vertical;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  background: var(--background);
+}
+
+.input::placeholder {
+  color: var(--muted-2);
+}
+
+.inputError {
+  border-color: var(--danger);
+}
+
+.fieldError {
+  font-size: 0.78rem;
+  color: var(--danger);
+}
+
+.errorBanner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--danger-soft);
+  border: 1px solid rgba(239, 91, 91, 0.35);
+  color: #ff9c9c;
+  font-size: 0.86rem;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 15px 26px;
+  margin-top: 4px;
+}
+
+.spinner {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.successCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 40px 8px;
+}
+
+.successIcon {
+  color: #43c67a;
+  margin-bottom: 10px;
+}
+
+.successCard h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.successCard p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
