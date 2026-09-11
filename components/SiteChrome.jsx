@@ -15,11 +15,11 @@ export default function SiteChrome({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const alreadyVisited = sessionStorage.getItem("dhiresh-visited");
-    if (alreadyVisited) {
-      setLoading(false);
-      return;
-    }
+    // const alreadyVisited = sessionStorage.getItem("dhiresh-visited");
+    // if (alreadyVisited) {
+    //   setLoading(false);
+    //   return;
+    // }
     const timer = setTimeout(() => {
       setLoading(false);
       sessionStorage.setItem("dhiresh-visited", "1");

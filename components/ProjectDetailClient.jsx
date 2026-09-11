@@ -11,7 +11,11 @@ export default function ProjectDetailClient({ project }) {
   return (
     <section className={styles.page}>
       <div className="container">
-        <motion.div initial="hidden" animate="show" variants={staggerContainer(0.1)}>
+        <motion.div
+          initial="hidden"
+          animate="show"
+          variants={staggerContainer(0.1)}
+        >
           <motion.div variants={fadeUp}>
             <Link href="/projects" className={styles.back}>
               <ArrowLeft size={16} /> Back to Projects
@@ -24,10 +28,20 @@ export default function ProjectDetailClient({ project }) {
             <p className={styles.description}>{project.description}</p>
 
             <div className={styles.actions}>
-              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
                 Live Website <ArrowUpRight size={16} />
               </a>
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost"
+              >
                 <Github size={16} /> GitHub
               </a>
             </div>

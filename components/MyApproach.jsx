@@ -7,12 +7,36 @@ import { fadeUp, staggerContainer, revealViewport } from "@/lib/motionVariants";
 import styles from "./MyApproach.module.css";
 
 const principles = [
-  { icon: Code2, title: "Clean Code", desc: "Readable, structured and consistent — code that's easy to maintain." },
-  { icon: Smartphone, title: "Responsive Design", desc: "Every interface is designed to work well on any screen." },
-  { icon: Users, title: "User Experience", desc: "Interfaces should feel intuitive before they feel impressive." },
-  { icon: Zap, title: "Performance", desc: "Fast, efficient and mindful of what actually needs to ship." },
-  { icon: Wrench, title: "Maintainability", desc: "Built to be extended and edited without a full rewrite." },
-  { icon: BookOpen, title: "Continuous Learning", desc: "Always exploring new patterns, tools and better ways to build." },
+  {
+    icon: Code2,
+    title: "Clean Code",
+    desc: "Readable, structured and consistent — code that's easy to maintain.",
+  },
+  {
+    icon: Smartphone,
+    title: "Responsive Design",
+    desc: "Every interface is designed to work well on any screen.",
+  },
+  {
+    icon: Users,
+    title: "User Experience",
+    desc: "Interfaces should feel intuitive before they feel impressive.",
+  },
+  {
+    icon: Zap,
+    title: "Performance",
+    desc: "Fast, efficient and mindful of what actually needs to ship.",
+  },
+  {
+    icon: Wrench,
+    title: "Maintainability",
+    desc: "Built to be extended and edited without a full rewrite.",
+  },
+  {
+    icon: BookOpen,
+    title: "Continuous Learning",
+    desc: "Always exploring new patterns, tools and better ways to build.",
+  },
 ];
 
 export default function MyApproach() {

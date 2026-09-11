@@ -114,15 +114,23 @@
   background: var(--background-raised);
 }
 
-.dotRed, .dotYellow, .dotGreen {
+.dotRed,
+.dotYellow,
+.dotGreen {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block;
 }
-.dotRed { background: #ef5b5b; }
-.dotYellow { background: #e8b339; }
-.dotGreen { background: #43c67a; }
+.dotRed {
+  background: #ef5b5b;
+}
+.dotYellow {
+  background: #e8b339;
+}
+.dotGreen {
+  background: #43c67a;
+}
 
 .windowTitle {
   margin-left: 8px;

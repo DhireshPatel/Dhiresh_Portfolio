@@ -10,7 +10,10 @@ export default function LoadingScreen({ visible }) {
         <motion.div
           className={styles.screen}
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } }}
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+          }}
         >
           <div className={styles.inner}>
             <motion.span
@@ -39,7 +42,11 @@ export default function LoadingScreen({ visible }) {
                 className={styles.barFill}
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ duration: 1.05, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                transition={{
+                  duration: 1.05,
+                  delay: 0.4,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
               />
             </motion.div>
           </div>

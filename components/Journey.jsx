@@ -8,37 +8,44 @@ import styles from "./Journey.module.css";
 const milestones = [
   {
     title: "Started learning web development",
-    detail: "Began exploring how the web works — HTML, CSS and the basics of building for the browser.",
+    detail:
+      "Began exploring how the web works — HTML, CSS and the basics of building for the browser.",
     tag: "Foundations",
   },
   {
     title: "Learned HTML & CSS",
-    detail: "Focused on semantic markup, layout systems and building fully responsive interfaces.",
+    detail:
+      "Focused on semantic markup, layout systems and building fully responsive interfaces.",
     tag: "Foundations",
   },
   {
     title: "Started JavaScript",
-    detail: "Moved into logic and interactivity — DOM manipulation, events and core language fundamentals.",
+    detail:
+      "Moved into logic and interactivity — DOM manipulation, events and core language fundamentals.",
     tag: "Core Skills",
   },
   {
     title: "Started React",
-    detail: "Learned component-based architecture, state management and building reusable UI.",
+    detail:
+      "Learned component-based architecture, state management and building reusable UI.",
     tag: "Core Skills",
   },
   {
     title: "Started Next.js",
-    detail: "Explored routing, server components and full-stack patterns within the React ecosystem.",
+    detail:
+      "Explored routing, server components and full-stack patterns within the React ecosystem.",
     tag: "Growth",
   },
   {
     title: "Built real-world projects",
-    detail: "Applied everything learned to complete, working products end to end.",
+    detail:
+      "Applied everything learned to complete, working products end to end.",
     tag: "Growth",
   },
   {
     title: "Continuously improving",
-    detail: "Still learning, still building — refining craft with every new project.",
+    detail:
+      "Still learning, still building — refining craft with every new project.",
     tag: "Ongoing",
   },
 ];
@@ -61,7 +68,10 @@ export default function Journey() {
 
         <div className={styles.timeline} ref={ref}>
           <div className={styles.trackBg} />
-          <motion.div className={styles.trackFill} style={{ scaleY: lineScale }} />
+          <motion.div
+            className={styles.trackFill}
+            style={{ scaleY: lineScale }}
+          />
 
           {milestones.map((m, i) => (
             <ScrollReveal

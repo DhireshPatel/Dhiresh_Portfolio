@@ -5,7 +5,11 @@ import styles from "./ProjectFilter.module.css";
 
 export default function ProjectFilter({ categories, active, onChange }) {
   return (
-    <div className={styles.filterBar} role="tablist" aria-label="Project categories">
+    <div
+      className={styles.filterBar}
+      role="tablist"
+      aria-label="Project categories"
+    >
       {categories.map((cat) => {
         const isActive = cat === active;
         return (
